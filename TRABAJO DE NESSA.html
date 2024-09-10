@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<!-- saved from url=(0082)file:///C:/Users/escrituracion%201/Documents/VANESSA/TRABAJO%20HTML%20VANESSA.html -->
-<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>NESSA'S PAGE -</title>
-
+    <title>NESSA'S PAGE</title>
+<link rel="icon" href="icono.ico">
 <style>
 
         * {
@@ -13,6 +13,12 @@
             padding: 0;
             box-sizing: border-box;
             font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            font-family: 'Helvetica', sans-serif;
+            color: #333;
+            
         }
 
         /* Estilo del encabezado */
@@ -26,15 +32,21 @@
             position: absolute;
             width: 100%;
             z-index: 10;
+        
         }
 
         .navbar .logo {
             font-size: 24px;
             font-weight: bold;
             color: #fff;
-
+            border-radius: 25px;
+            transition: background-color 0.3s, color 0.3s;
+            padding: 10px 20px;
         }
-            
+            .navbar .logo:hover {
+            background-color: white;
+            color: blue; 
+            }
             
 
         .navbar nav ul {
@@ -50,9 +62,21 @@
             color: #fff;
             text-decoration: none;
             font-weight: bold;
+            border-radius: 25px;
+            transition: background-color 0.3s, color 0.3s;
+            padding: 10px 20px;
         }
 
-        /* fondo */
+        .navbar nav ul li a:hover {
+            background-color: white;
+            color: blue; 
+            font-size: 18px;
+            margin-bottom: 30px;
+            border-radius: 25px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Hero section */
         .hero {
             height: 100vh;
             background-image: url('https://i.blogs.es/0ca9a6/aa/1366_2000.jpeg');
@@ -66,79 +90,28 @@
             color: white;
         }
 
+    
 
-
-        .hero-content {
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero-content h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-
-        .hero-content p {
-            font-size: 18px;
-            margin-bottom: 30px;
-        }
-
-        .cta-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .btn-primary,
-        .btn-secondary {
-            padding: 15px 30px;
-            font-size: 16px;
-            border-radius: 25px;
-            text-decoration: none;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .btn-primary {
-            background-color: transparent;
-            color: white;
-            border: 2px solid white;
-        }
-
-        .btn-primary:hover {
-            background-color: white;
-            color: blue;
-        }
-
-        .btn-secondary {
-            background-color: transparent;
-            color: white;
-            border: 2px solid white;
-        }
-
-        .btn-secondary:hover {
-            background-color: white;
-            color: blue;
-        }
     </style>
 </head>
 <body>
     <!-- Encabezado -->
     <header class="navbar">
-        <div class="logo">INICIO </div>
-        
+        <div class="logo">INICIO</div>
+        <nav>
+            <ul>
+                <li><a href="#">Ingresar</a></li>
+                <li><a href="#">Crear</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="overlay"></div>
         <div class="hero-content">
-            <h1>¡HOLAAA!</h1>
-            <p>Soy Nessa, bienvenidx. Me da gusto que estés aqui :)</p>
-            <div class="cta-buttons">
-                <a href="file:///C:/Users/escrituracion%201/Documents/VANESSA/TRABAJO%20HTML%20VANESSA.html#" class="btn-primary">¿Entramos?</a>
-                <a href="file:///C:/Users/escrituracion%201/Documents/VANESSA/TRABAJO%20HTML%20VANESSA.html#" class="btn-secondary">Entra tú</a>
-            </div>
+            <div class="cta-buttons"> </div>
         </div>
     </section>
-
-</body></html>
+</body>
+</html>
